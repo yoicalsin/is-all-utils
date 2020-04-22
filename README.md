@@ -59,3 +59,20 @@ isFunction(function () {
 
 isFunction(class {}); // => false
 ```
+
+## ⭐ Support for
+
+`is-all-utils` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
+
+## 🎩 Stay in touch
+
+- Author [Yoni Calsin](https://github.com/yoicalsin)
+- Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
+
+## Contributors
+
+Thanks to the wonderful people who collaborate with me !
+
+## 📜 License
+
+`is-all-utils` under [License MIT.](LICENSE)
