@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const is = (type) => (value) => toString.call(value) === toString.call(type);
+exports.is = is;
+exports.isObject = is({});
+exports.isArray = is([]);
+exports.isNumber = is(7);
+exports.isString = is("");
+exports.isClass = is(class {});
+exports.isRegex = is(/7/gi);
+exports.isBoolean = is(true);
+exports.isUndefined = is();
+exports.isNull = is(null);
+exports.isFunction = is(is);
