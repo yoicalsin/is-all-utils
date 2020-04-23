@@ -6,6 +6,9 @@ const is = <T = any>(type?: any) => (value: T): boolean => {
 // Number
 export const isNumber = is(7);
 export const isInteger = is<number>(Number.isInteger);
+export const isFloat = is<number>((v: any) =>
+    /(?:\.)+/.test(parseFloat(v) as any),
+);
 
 // Object
 export const isObject = is({});
