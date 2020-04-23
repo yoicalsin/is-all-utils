@@ -7,6 +7,7 @@ const is = (type) => (value) => {
 exports.is = is;
 exports.isNumber = is(7);
 exports.isInteger = is(Number.isInteger);
+exports.isFloat = is((v) => /(?:\.)+/.test(parseFloat(v)));
 exports.isObject = is({});
 exports.isArray = is([]);
 exports.isString = is('');

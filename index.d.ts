@@ -1,6 +1,7 @@
 declare const is: <T = any>(type?: any) => (value: T) => boolean;
 export declare const isNumber: (value: any) => boolean;
 export declare const isInteger: (value: number) => boolean;
+export declare const isFloat: (value: number) => boolean;
 export declare const isObject: (value: any) => boolean;
 export declare const isArray: (value: any) => boolean;
 export declare const isString: (value: any) => boolean;
