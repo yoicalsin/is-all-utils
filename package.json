@@ -1,6 +1,6 @@
 {
   "name": "is-all-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Is utils functions for validate !",
   "main": "index.js",
   "scripts": {
