@@ -1,24 +1,24 @@
 {
-  "name": "is-all-utils",
-  "version": "1.0.1",
-  "description": "Is utils functions for validate !",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yoicalsin/is-all-utils.git"
-  },
-  "keywords": [
-    "is",
-    "is-object",
-    "is-all"
-  ],
-  "author": "Yoni Calsin <helloyonicb@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yoicalsin/is-all-utils/issues"
-  },
-  "homepage": "https://github.com/yoicalsin/is-all-utils#readme"
+    "name": "is-all-utils",
+    "version": "1.0.3",
+    "description": "Is utils functions for validate !",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yoicalsin/is-all-utils.git"
+    },
+    "keywords": [
+        "is",
+        "is-object",
+        "is-all"
+    ],
+    "author": "Yoni Calsin <helloyonicb@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yoicalsin/is-all-utils/issues"
+    },
+    "homepage": "https://github.com/yoicalsin/is-all-utils#readme"
 }

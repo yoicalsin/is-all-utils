@@ -6,58 +6,97 @@ they are functions to validate types!
 
 ```ts
 import {
-  isObject,
-  isArray,
-  isNumber,
-  isString,
-  isClass,
-  isRegex,
-  isBoolean,
-  isUndefined,
-  isNull,
-  isFunction,
-} from "is-all-utils";
+    // Number
+    isNumber,
+    isInteger,
+    isFloat,
 
-// Object
-isObject([425, 235, 5]); // => false
-isObject({
-  year: 2020,
-}); // => true
+    // Object
+    isObj,
+    isObject,
+    isArray,
+    isString,
+    isRegex,
+    isBoolean,
+    isBool,
 
-// Array
-isArray([1, 23, 515]); // => true
+    // Undefined
+    isUndefined,
+    isNull,
+    isNil,
+
+    // Function
+    isFunction,
+    isSymbol,
+
+    // Date, Error
+    isError,
+    isDate,
+
+    // Promise
+    isPromise,
+} from 'is-all-utils';
 
 // Number
-isNumber(516); // => true
-isNumber(NaN); // => true
+isNumber(546); //=> true
+isNumber(76.945); //=> true
 
-// String
-isString("yoni-calsin"); // => true
+isInteger(654); //=> true
+isInteger(654.645); //=> false
 
-// Class
-isClass(class {}); // => true
+isFloat(546); //=> false
+isFloat(546.9465); //=> true
 
-// Regex
-isRegex(/7/); // => true
+// Object
+isObj({}); //=> true
+isObj([]); //=> true
 
-// Boolean
-isBoolean(false); // => true
-isBoolean(true); // => true
+isObject([]); //=> false
+isObject({}); //=> true
+
+isArray({}); //=> false
+isArray([]); //=> true
+
+isString('Hello World !'); //=> true
+
+isRegex(/7/g); //=> true
+isRegex(new RegExp('7', 'g')); //=> true
+
+isBoolean(true); //=> true
+isBoolean(false); //=> true
+isBoolean(1); //=> false
+
+isBool(true); //=> true
+isBool(1); //=> true
+isBool(0); //=> true
+isBool(false); //=> true
 
 // Undefined
-isUndefined(undefined); // => true
-isUndefined(null); // => false
+isUndefined(undefined); //=> true
+isUndefined(null); //=> false
 
-// Null
-isNull(null); // => true
-isNull(undefined); // => false
+isNull(undefined); //=> false
+isNull(null); //=> true
+
+isNil(undefined); //=> true
+isNil(null); //=> true
 
 // Function
-isFunction(function () {
-  // Here your code !
-}); // => true
+isFunction(() => {}); //=> true
+isFunction(class {}); //=> true
 
-isFunction(class {}); // => false
+isSymbol(Symbol()); //=> true
+isSymbol(class {}); //=> false
+
+// Error, Date
+isError(new Error('Hi, Error ❓')); //=> true
+
+isDate(new Date()); //=> true
+isDate(new Date().getTime()); //=> false
+isDate(Date); //=> false
+
+isPromise(new Promise(() => {})); //= true
+isPromise(Promise); //= false
 ```
 
 ## ⭐ Support for
@@ -66,8 +105,8 @@ isFunction(class {}); // => false
 
 ## 🎩 Stay in touch
 
-- Author [Yoni Calsin](https://github.com/yoicalsin)
-- Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
+-   Author [Yoni Calsin](https://github.com/yoicalsin)
+-   Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
 
 ## Contributors
 
