@@ -1,5 +1,7 @@
 const is = <T = any>(type?: any) => (value: T): boolean => {
-    if (type && type.name != 'is' && isFunction(type)) return type(value);
+    if (type && type.name != 'is' && typeof type === 'function') {
+        return type(value);
+    }
     return toString.call(value) === toString.call(type);
 };
 
@@ -11,15 +13,18 @@ export const isFloat = is<number>((v: any) =>
 );
 
 // Object
+export const isObj = is((v: any) => typeof v === 'object');
 export const isObject = is({});
 export const isArray = is([]);
 export const isString = is('');
 export const isRegex = is(/7/gi);
 export const isBoolean = is(true);
+export const isBool = is((v: any) => !!v);
 
 // Null
 export const isUndefined = is();
 export const isNull = is(null);
+export const isNil = is((v: any) => isUndefined(v) || isNull(v));
 
 // Function
 export const isFunction = is(is);
