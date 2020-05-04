@@ -6,22 +6,22 @@ they are functions to validate types!
 
 ```ts
 import {
-  isObject,
-  isArray,
-  isNumber,
-  isString,
-  isClass,
-  isRegex,
-  isBoolean,
-  isUndefined,
-  isNull,
-  isFunction,
-} from "is-all-utils";
+    isObject,
+    isArray,
+    isNumber,
+    isString,
+    isClass,
+    isRegex,
+    isBoolean,
+    isUndefined,
+    isNull,
+    isFunction,
+} from 'is-all-utils';
 
 // Object
 isObject([425, 235, 5]); // => false
 isObject({
-  year: 2020,
+    year: 2020,
 }); // => true
 
 // Array
@@ -32,7 +32,7 @@ isNumber(516); // => true
 isNumber(NaN); // => true
 
 // String
-isString("yoni-calsin"); // => true
+isString('yoni-calsin'); // => true
 
 // Class
 isClass(class {}); // => true
@@ -54,7 +54,7 @@ isNull(undefined); // => false
 
 // Function
 isFunction(function () {
-  // Here your code !
+    // Here your code !
 }); // => true
 
 isFunction(class {}); // => false
@@ -66,8 +66,8 @@ isFunction(class {}); // => false
 
 ## 🎩 Stay in touch
 
-- Author [Yoni Calsin](https://github.com/yoicalsin)
-- Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
+-   Author [Yoni Calsin](https://github.com/yoicalsin)
+-   Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
 
 ## Contributors
 
