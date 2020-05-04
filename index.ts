@@ -19,7 +19,7 @@ export const isArray = is([]);
 export const isString = is('');
 export const isRegex = is(/7/gi);
 export const isBoolean = is(true);
-export const isBool = is((v: any) => !!v);
+export const isBool = is((v: any) => isBoolean(v) || v == 0 || v == 1);
 
 // Null
 export const isUndefined = is();
