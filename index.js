@@ -16,7 +16,7 @@ exports.isArray = is([]);
 exports.isString = is('');
 exports.isRegex = is(/7/gi);
 exports.isBoolean = is(true);
-exports.isBool = is((v) => !!v);
+exports.isBool = is((v) => isBoolean(v) || v == 0 || v == 1);
 exports.isUndefined = is();
 exports.isNull = is(null);
 exports.isNil = is((v) => isUndefined(v) || isNull(v));
