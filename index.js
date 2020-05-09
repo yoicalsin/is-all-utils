@@ -10,7 +10,7 @@ exports.is = is;
 exports.isNumber = is(7);
 exports.isNumberFn = is((v) => v === Number);
 exports.isInteger = is(Number.isInteger);
-exports.isFloat = is((v) => /(?:\.)+/.test(parseFloat(v)));
+exports.isFloat = is((v) => /(?:\.)+/.test(v));
 exports.isObj = is((v) => typeof v === 'object');
 exports.isObject = is({});
 exports.isObjectFn = is((v) => v === Object);
