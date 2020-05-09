@@ -1,5 +1,5 @@
-'use strict';
-Object.defineProperty(exports, '__esModule', { value: true });
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const is = (type) => (value) => {
     if (toString.call(type) === '[object Function]' && type.name != 'is') {
         return type(value);
@@ -8,27 +8,33 @@ const is = (type) => (value) => {
 };
 exports.is = is;
 exports.isNumber = is(7);
+exports.isNumberFn = is((v) => v === Number);
 exports.isInteger = is(Number.isInteger);
 exports.isFloat = is((v) => /(?:\.)+/.test(parseFloat(v)));
 exports.isObj = is((v) => typeof v === 'object');
 exports.isObject = is({});
+exports.isObjectFn = is((v) => v === Object);
 exports.isArray = is([]);
+exports.isArrayFn = is((v) => v === Array);
 exports.isString = is('');
-exports.isRegex = is(/7/gi);
+exports.isStringFn = is((v) => v === String);
+exports.isRegExp = is(/7/gi);
+exports.isRegExpFn = is((v) => v === RegExp);
 exports.isBoolean = is(true);
+exports.isBooleanFn = is((v) => v === Boolean);
 exports.isBool = is((v) => exports.isBoolean(v) || v == 0 || v == 1);
 exports.isUndefined = is();
 exports.isNull = is(null);
 exports.isNil = is((v) => exports.isUndefined(v) || exports.isNull(v));
 exports.isFunction = is(is);
-exports.isAsyncFunction = is(async () => {});
+exports.isAsyncFunction = is(async () => { });
 exports.isFn = is((v) => typeof v === 'function');
 exports.isSymbol = is(Symbol());
-exports.isClass = is(
-    (v) =>
-        exports.isObject((v || {}).prototype) &&
-        exports.isFn(v.prototype.constructor),
-);
+exports.isSymbolFn = is((v) => v === Symbol);
+exports.isClass = is((v) => exports.isObject((v || {}).prototype) && exports.isFn(v.prototype.constructor));
 exports.isError = is(new Error());
+exports.isErrorFn = is((v) => v === Error);
 exports.isDate = is(new Date());
-exports.isPromise = is(new Promise(() => {}));
+exports.isDateFn = is((v) => v === Date);
+exports.isPromise = is(new Promise(() => { }));
+exports.isPromiseFn = is((v) => v === Promise);
