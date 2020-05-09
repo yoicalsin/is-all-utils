@@ -1,4 +1,4 @@
-## Is all utils
+## Is all utils, +32 functions
 
 Some functions to validate the type, and they are very light; take a look at the documentation!
 

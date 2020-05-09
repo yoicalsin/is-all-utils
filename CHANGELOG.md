@@ -1,6 +1,6 @@
 ## 💎 Changelogs
 
-### 🏆 v1.0.4
+### 🏆 v1.0.4 <===> [@yoicalsin](https://twitter.com/yoicalsin)
 
 -   [ 😲 ] Resolved some _bugs_.
 -   [ 🎨 ] Created `isAsyncFunction` function.
