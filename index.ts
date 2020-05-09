@@ -1,5 +1,5 @@
 const is = <T = any>(type?: any) => (value: T): boolean => {
-    if (type && type.name != 'is' && typeof type === 'function') {
+    if (toString.call(type) === '[object Function]' && type.name != 'is') {
         return type(value);
     }
     return toString.call(value) === toString.call(type);
@@ -8,9 +8,7 @@ const is = <T = any>(type?: any) => (value: T): boolean => {
 // Number
 export const isNumber = is(7);
 export const isInteger = is<number>(Number.isInteger);
-export const isFloat = is<number>((v: any) =>
-    /(?:\.)+/.test(parseFloat(v) as any),
-);
+export const isFloat = is<number>((v) => /(?:\.)+/.test(parseFloat(v) as any));
 
 // Object
 export const isObj = is((v: any) => typeof v === 'object');
@@ -19,7 +17,7 @@ export const isArray = is([]);
 export const isString = is('');
 export const isRegex = is(/7/gi);
 export const isBoolean = is(true);
-export const isBool = is((v: any) => isBoolean(v) || v == 0 || v == 1);
+export const isBool = is((v) => isBoolean(v) || v == 0 || v == 1);
 
 // Null
 export const isUndefined = is();
@@ -28,7 +26,14 @@ export const isNil = is((v: any) => isUndefined(v) || isNull(v));
 
 // Function
 export const isFunction = is(is);
+export const isAsyncFunction = is(async () => {});
+export const isFn = is((v: any) => typeof v === 'function');
 export const isSymbol = is(Symbol());
+
+// Class
+export const isClass = is(
+    (v) => isObject((v || {}).prototype) && isFn(v.prototype.constructor),
+);
 
 // Error, Date
 export const isError = is(new Error());
