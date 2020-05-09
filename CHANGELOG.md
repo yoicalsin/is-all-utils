@@ -1,9 +1,9 @@
 ## 💎 Changelogs
 
-### 🎉 v1.0.4
+### 🏆 v1.0.4
 
--   😲 Resolved some bugs.
--   🎨 Created `isAsyncFunction`.
--   🎨 Create `isFn` function.
+-   [ 😲 ] Resolved some _bugs_.
+-   [ 🎨 ] Created `isAsyncFunction` function.
+-   [ 🎨 ] Created `isFn` function.
 
 Thank you 🎉 !
