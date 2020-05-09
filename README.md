@@ -180,8 +180,10 @@ isClass(async () => {}); //=> false
 
 ## 🎩 Stay in touch
 
--   Author [Yoni Calsin](https://github.com/yoicalsin)
--   Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
+-   Github [@yoicalsin](https://github.com/yoicalsin)
+-   Twitter [@yoicalsin](https://twitter.com/yoicalsin)
+-   Instagram [@yoicalsin](https://instagram.com/yoicalsin)
+-   Medium [@yoicalsin](https://medium.com/yoicalsin)
 
 ## Contributors
 
