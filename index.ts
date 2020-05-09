@@ -9,7 +9,7 @@ const is = <T = any>(type?: any) => (value: T): boolean => {
 export const isNumber = is(7);
 export const isNumberFn = is((v) => v === Number);
 export const isInteger = is<number>(Number.isInteger);
-export const isFloat = is<number>((v) => /(?:\.)+/.test(parseFloat(v) as any));
+export const isFloat = is<number>((v) => /(?:\.)+/.test(v));
 
 // Object
 export const isObj = is((v: any) => typeof v === 'object');
