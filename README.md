@@ -159,7 +159,7 @@ isPromiseFn(new Promise(() => {})); //=> false
 
 ## 🏆 Migration v1.0.3 to v1.0.4
 
-Two new functions, `isAsyncFunction`, `isFn`, `isClass`, and more functions.
+Two new functions, `isAsyncFunction`, `isFn`, `isClass`, and more functions, for see the [changelog](CHANGELOG)
 
 ```ts
 isAsyncFunction(async () => {}); //=> true
