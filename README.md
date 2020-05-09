@@ -37,31 +37,61 @@ is.isNil;
 // Number
 isNumber(546); //=> true
 isNumber(76.945); //=> true
+isNumber(Number); //=> false
+isNumber(Number(7)); //=> true
+isNumber(new Date().getTime()); //=> true
+
+isNumberFn(Number); //=> true
+isNumberFn(654); //=> false
 
 isInteger(654); //=> true
 isInteger(654.645); //=> false
 
 isFloat(546); //=> false
 isFloat(546.9465); //=> true
+isFloat(546.0); //=> false
 
 // Object
 isObj({}); //=> true
 isObj([]); //=> true
+isObj(Array(7, 18)); //=> true
 
 isObject([]); //=> false
 isObject({}); //=> true
+isObject(Object); //=> false
+
+isObjectFn(Object); //=> true
+isObjectFn({}); //=> false
 
 isArray({}); //=> false
 isArray([]); //=> true
+isArray(Array); //=> false
+isArray(Array(7, 18)); //=> true
+
+isArrayFn(Array); //=> true
+isArrayFn(Array(7, 18)); //=> false
 
 isString('Hello World !'); //=> true
+isString(String('Hello World !')); //=> true
+isString(String); //=> false
 
-isRegex(/7/g); //=> true
-isRegex(new RegExp('7', 'g')); //=> true
+isStringFn(String); //=> true
+isStringFn(String('Hello World !')); //=> false
+
+isRegExp(/7/g); //=> true
+isRegExp(RegExp('7', 'g')); //=> true
+isRegExp(RegExp); //=> false
+
+isRegExpFn(RegExp('7', 'g')); //=> false
+isRegExpFn(RegExp); //=> true
 
 isBoolean(true); //=> true
 isBoolean(false); //=> true
 isBoolean(1); //=> false
+isBoolean(Boolean(1)); //=> true
+
+isBooleanFn(Boolean); //=> true
+isBooleanFn(Boolean(true)); //=> false
 
 isBool(true); //=> true
 isBool(1); //=> true
@@ -82,6 +112,7 @@ isNil(null); //=> true
 isFunction(() => {}); //=> true
 isFunction(class {}); //=> true
 isFunction(async () => {}); //=> false
+isFunction(Function); //=> true
 
 isAsyncFunction(async () => {}); //=> true
 isAsyncFunction(() => {}); //=> false
@@ -89,28 +120,46 @@ isAsyncFunction(() => {}); //=> false
 isFn(() => {}); //=> true
 isFn(async () => {}); //=> true
 isFn(class {}); //=> true
+isFn(Number); //=> true
+isFn(Number); //=> true
+isFn(Function); //=> true
 
 isClass(class {}); //=> true
 isClass(() => {}); //=> false
 
 isSymbol(Symbol()); //=> true
 isSymbol(class {}); //=> false
+isSymbol(Symbol); //=> false
+
+isSymbolFn(Symbol); //=> true
+isSymbolFn(Symbol()); //=> false
 
 // Error, Date
 isError(new Error('Hi, Error ❓')); //=> true
 isError(Error); //=> false
 
+isErrorFn(Error); //=> true
+isErrorFn(new Error('Hi, Error ❌')); //=> false
+
 isDate(new Date()); //=> true
 isDate(new Date().getTime()); //=> false
 isDate(Date); //=> false
 
-isPromise(new Promise(() => {})); //= true
-isPromise(Promise); //= false
+isDateFn(Date); //=> true
+isDateFn(new Date()); //=> false
+
+isPromise(new Promise(() => {})); //=> true
+isPromise(async () => {}); //=> false
+isPromise((async () => {})()); //=> true
+isPromise(Promise); //=> false
+
+isPromiseFn(Promise); //=> true
+isPromiseFn(new Promise(() => {})); //=> false
 ```
 
 ## 🏆 Migration v1.0.3 to v1.0.4
 
-Two new functions, `isAsyncFunction`, `isFn`, and `isClass` functions.
+Two new functions, `isAsyncFunction`, `isFn`, `isClass`, and more functions.
 
 ```ts
 isAsyncFunction(async () => {}); //=> true
