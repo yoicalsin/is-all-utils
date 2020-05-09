@@ -1,7 +1,8 @@
 /.vscode
 /node_modules
 
-tsconfig.json
+CHANGELOG.md
 index.ts
+tsconfig.json
 .prettierrc.js
 .gitignore
