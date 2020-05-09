@@ -1,42 +1,39 @@
 ## Is all utils
 
-they are functions to validate types!
+Some functions to validate the type, and they are very light; take a look at the documentation!
+
+<a href="https://github.com/yoicalsin/is-all-utils"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
+<a href="https://www.npmjs.com/is-all-utils" target="_blank">
+<img src="https://img.shields.io/npm/v/is-all-utils" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/is-all-utils" target="_blank">
+<img src="https://img.shields.io/npm/l/is-all-utils" alt="Package License" /></a>
+<a href="https://www.npmjs.com/is-all-utils" target="_blank">
+<img src="https://img.shields.io/npm/dm/is-all-utils" alt="NPM Downloads" /></a>
+<a href="https://github.com/yoicalsin/is-all-utils" target="_blank">
+<img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
+<a href="https://github.com/yoicalsin/is-all-utils"><img src="https://img.shields.io/badge/Github%20Page-is.all.utils-yellow?style=flat-square&logo=github" /></a>
+<a href="https://github.com/yoicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+<a href="https://twitter.com/yoicalsin" target="_blank">
+<img src="https://img.shields.io/twitter/follow/yoicalsin.svg?style=social&label=Follow"></a>
 
 ### Usage
 
+For import with `typescript` or `ES6+`
+
 ```ts
-import {
-    // Number
-    isNumber,
-    isInteger,
-    isFloat,
+import { isNil /* ...more functions */ } from 'is-all-utils';
+```
 
-    // Object
-    isObj,
-    isObject,
-    isArray,
-    isString,
-    isRegex,
-    isBoolean,
-    isBool,
+For import with `javascript standar or ES5-`
 
-    // Undefined
-    isUndefined,
-    isNull,
-    isNil,
+```js
+const is = require('is-all-utils');
 
-    // Function
-    isFunction,
-    isSymbol,
+// Use with javascript standar
+is.isNil;
+```
 
-    // Date, Error
-    isError,
-    isDate,
-
-    // Promise
-    isPromise,
-} from 'is-all-utils';
-
+```ts
 // Number
 isNumber(546); //=> true
 isNumber(76.945); //=> true
@@ -84,12 +81,24 @@ isNil(null); //=> true
 // Function
 isFunction(() => {}); //=> true
 isFunction(class {}); //=> true
+isFunction(async () => {}); //=> false
+
+isAsyncFunction(async () => {}); //=> true
+isAsyncFunction(() => {}); //=> false
+
+isFn(() => {}); //=> true
+isFn(async () => {}); //=> true
+isFn(class {}); //=> true
+
+isClass(class {}); //=> true
+isClass(() => {}); //=> false
 
 isSymbol(Symbol()); //=> true
 isSymbol(class {}); //=> false
 
 // Error, Date
 isError(new Error('Hi, Error ❓')); //=> true
+isError(Error); //=> false
 
 isDate(new Date()); //=> true
 isDate(new Date().getTime()); //=> false
@@ -97,6 +106,23 @@ isDate(Date); //=> false
 
 isPromise(new Promise(() => {})); //= true
 isPromise(Promise); //= false
+```
+
+## 🏆 Migration v1.0.3 to v1.0.4
+
+Two new functions, `isAsyncFunction`, `isFn`, and `isClass` functions.
+
+```ts
+isAsyncFunction(async () => {}); //=> true
+isAsyncFunction(() => {}); //=> false
+
+isFn(() => {}); //=> true
+isFn(async () => {}); //=> true
+isFn(class {}); //=> true
+
+isClass(class {}); //=> true
+isClass(() => {}); //=> false
+isClass(async () => {}); //=> false
 ```
 
 ## ⭐ Support for
