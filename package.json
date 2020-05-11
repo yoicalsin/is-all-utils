@@ -1,6 +1,6 @@
 {
     "name": "is-all-utils",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Is utils functions for validate !",
     "main": "index.js",
     "scripts": {
@@ -15,6 +15,9 @@
         "is-object",
         "is-all"
     ],
+    "devDependencies": {
+        "@types/node": "^13.9.0"
+    },
     "author": "Yoni Calsin <helloyonicb@gmail.com>",
     "license": "MIT",
     "bugs": {
