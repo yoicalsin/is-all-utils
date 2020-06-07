@@ -2,19 +2,19 @@
 
 Some functions to validate the type, and they are very light; take a look at the documentation!
 
-<a href="https://github.com/yoicalsin/is-all-utils"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
+<a href="https://github.com/yonicalsin/is-all-utils"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/is-all-utils" target="_blank">
 <img src="https://img.shields.io/npm/v/is-all-utils" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/is-all-utils" target="_blank">
 <img src="https://img.shields.io/npm/l/is-all-utils" alt="Package License" /></a>
 <a href="https://www.npmjs.com/is-all-utils" target="_blank">
 <img src="https://img.shields.io/npm/dm/is-all-utils" alt="NPM Downloads" /></a>
-<a href="https://github.com/yoicalsin/is-all-utils" target="_blank">
+<a href="https://github.com/yonicalsin/is-all-utils" target="_blank">
 <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-<a href="https://github.com/yoicalsin/is-all-utils"><img src="https://img.shields.io/badge/Github%20Page-is.all.utils-yellow?style=flat-square&logo=github" /></a>
-<a href="https://github.com/yoicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-<a href="https://twitter.com/yoicalsin" target="_blank">
-<img src="https://img.shields.io/twitter/follow/yoicalsin.svg?style=social&label=Follow"></a>
+<a href="https://github.com/yonicalsin/is-all-utils"><img src="https://img.shields.io/badge/Github%20Page-is.all.utils-yellow?style=flat-square&logo=github" /></a>
+<a href="https://github.com/yonicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+<a href="https://twitter.com/yonicalsin" target="_blank">
+<img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 
 ### Usage
 
@@ -98,6 +98,37 @@ isBool(1); //=> true
 isBool(0); //=> true
 isBool(false); //=> true
 
+// Map
+isMap(new Map()); //=> true
+isMap(Map); //=> false
+isMap(new Map(Object.entries({ twitter: '@yonicalsin' }))); //=> true
+
+isMapFn(new Map()); //=> false
+isMapFn(Map); //=> true
+
+// WeakMap
+isWeakMap(new WeakMap()); //=> true
+isWeakMap(new Map()); //=> false
+
+isWeakMapFn(new WeakMap()); //=> false
+isWeakMapFn(WeakMap); //=> true
+
+// Set
+isSet(new Set()); //=> true
+isSet(Set); //=> false
+
+isSetFn(Set); //=> true
+isSetFn(new Set()); //=> false
+
+// WeakSet
+isWeakSet(new WeakSet()); //=> true
+isWeakSet(new Map()); //=> false
+isWeakSet(new Set()); //=> false
+
+isWeakSetFn(WeakSet); //=> true
+isWeakSetFn(new WeakSet()); //=> false
+isWeakSetFn(WeakSet()); //=> false
+
 // Undefined
 isUndefined(undefined); //=> true
 isUndefined(null); //=> false
@@ -180,10 +211,10 @@ isClass(async () => {}); //=> false
 
 ## 🎩 Stay in touch
 
--   Github [@yoicalsin](https://github.com/yoicalsin)
--   Twitter [@yoicalsin](https://twitter.com/yoicalsin)
--   Instagram [@yoicalsin](https://instagram.com/yoicalsin)
--   Medium [@yoicalsin](https://medium.com/yoicalsin)
+-   Github [@yonicalsin](https://github.com/yonicalsin)
+-   Twitter [@yonicalsin](https://twitter.com/yonicalsin)
+-   Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
+-   Medium [@yonicalsin](https://medium.com/yonicalsin)
 
 ## Contributors
 

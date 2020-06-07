@@ -25,6 +25,15 @@ export const isBoolean = is(true);
 export const isBooleanFn = is((v) => v === Boolean);
 export const isBool = is((v) => isBoolean(v) || v == 0 || v == 1);
 
+export const isMap = is(new Map());
+export const isMapFn = is((v) => v === Map);
+export const isWeakMap = is(new WeakMap());
+export const isWeakMapFn = is((v) => v === WeakMap);
+export const isSet = is(new Set());
+export const isSetFn = is((v) => v === Set);
+export const isWeakSet = is(new WeakSet());
+export const isWeakSetFn = is((v) => v === WeakSet);
+
 // Null
 export const isUndefined = is();
 export const isNull = is(null);
