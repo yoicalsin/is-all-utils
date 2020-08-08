@@ -5,6 +5,23 @@
 
 ## 💎 Changelogs
 
+### 🏆 v1.0.6 <===> [@yonicalsin][twitter]
+
+-   [] `isNumberFn` was removed !
+-   [] `isObjectFn` was removed !
+-   [] `isArrayFn` was removed !
+-   [] `isStringFn` was removed !
+-   [] `isRegExpFn` was removed !
+-   [] `isBooleanFn` was removed !
+-   [] `isMapFn` was removed !
+-   [] `isWeakMapFn` was removed !
+-   [] `isSetFn` was removed !
+-   [] `isWeakSetFn` was removed !
+-   [] `isSymbolFn` was removed !
+-   [] `isErrorFn` was removed !
+-   [] `isDateFn` was removed !
+-   [] `isPromiseFn` was removed !
+
 ### 🏆 v1.0.5 <===> [@yonicalsin][twitter]
 
 -   [ 🚀 ] `isMap` function created!

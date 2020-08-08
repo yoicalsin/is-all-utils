@@ -16,6 +16,16 @@ Some functions to validate the type, and they are very light; take a look at the
 <a href="https://twitter.com/yonicalsin" target="_blank">
 <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 
+### Installation
+
+```bash
+npm install --save is-all-utils
+
+# Or
+
+yarn add is-all-utils
+```
+
 ### Usage
 
 For import with `typescript` or `ES6+`
@@ -41,9 +51,6 @@ isNumber(Number); //=> false
 isNumber(Number(7)); //=> true
 isNumber(new Date().getTime()); //=> true
 
-isNumberFn(Number); //=> true
-isNumberFn(654); //=> false
-
 isInteger(654); //=> true
 isInteger(654.645); //=> false
 
@@ -60,38 +67,23 @@ isObject([]); //=> false
 isObject({}); //=> true
 isObject(Object); //=> false
 
-isObjectFn(Object); //=> true
-isObjectFn({}); //=> false
-
 isArray({}); //=> false
 isArray([]); //=> true
 isArray(Array); //=> false
 isArray(Array(7, 18)); //=> true
 
-isArrayFn(Array); //=> true
-isArrayFn(Array(7, 18)); //=> false
-
 isString('Hello World !'); //=> true
 isString(String('Hello World !')); //=> true
 isString(String); //=> false
-
-isStringFn(String); //=> true
-isStringFn(String('Hello World !')); //=> false
 
 isRegExp(/7/g); //=> true
 isRegExp(RegExp('7', 'g')); //=> true
 isRegExp(RegExp); //=> false
 
-isRegExpFn(RegExp('7', 'g')); //=> false
-isRegExpFn(RegExp); //=> true
-
 isBoolean(true); //=> true
 isBoolean(false); //=> true
 isBoolean(1); //=> false
 isBoolean(Boolean(1)); //=> true
-
-isBooleanFn(Boolean); //=> true
-isBooleanFn(Boolean(true)); //=> false
 
 isBool(true); //=> true
 isBool(1); //=> true
@@ -103,31 +95,18 @@ isMap(new Map()); //=> true
 isMap(Map); //=> false
 isMap(new Map(Object.entries({ twitter: '@yonicalsin' }))); //=> true
 
-isMapFn(new Map()); //=> false
-isMapFn(Map); //=> true
-
 // WeakMap
 isWeakMap(new WeakMap()); //=> true
 isWeakMap(new Map()); //=> false
-
-isWeakMapFn(new WeakMap()); //=> false
-isWeakMapFn(WeakMap); //=> true
 
 // Set
 isSet(new Set()); //=> true
 isSet(Set); //=> false
 
-isSetFn(Set); //=> true
-isSetFn(new Set()); //=> false
-
 // WeakSet
 isWeakSet(new WeakSet()); //=> true
 isWeakSet(new Map()); //=> false
 isWeakSet(new Set()); //=> false
-
-isWeakSetFn(WeakSet); //=> true
-isWeakSetFn(new WeakSet()); //=> false
-isWeakSetFn(WeakSet()); //=> false
 
 // Undefined
 isUndefined(undefined); //=> true
@@ -162,47 +141,18 @@ isSymbol(Symbol()); //=> true
 isSymbol(class {}); //=> false
 isSymbol(Symbol); //=> false
 
-isSymbolFn(Symbol); //=> true
-isSymbolFn(Symbol()); //=> false
-
 // Error, Date
 isError(new Error('Hi, Error ❓')); //=> true
 isError(Error); //=> false
-
-isErrorFn(Error); //=> true
-isErrorFn(new Error('Hi, Error ❌')); //=> false
 
 isDate(new Date()); //=> true
 isDate(new Date().getTime()); //=> false
 isDate(Date); //=> false
 
-isDateFn(Date); //=> true
-isDateFn(new Date()); //=> false
-
 isPromise(new Promise(() => {})); //=> true
 isPromise(async () => {}); //=> false
 isPromise((async () => {})()); //=> true
 isPromise(Promise); //=> false
-
-isPromiseFn(Promise); //=> true
-isPromiseFn(new Promise(() => {})); //=> false
-```
-
-## 🏆 Migration v1.0.3 to v1.0.4
-
-Two new functions, `isAsyncFunction`, `isFn`, `isClass`, and more functions, for see the [changelog](CHANGELOG)
-
-```ts
-isAsyncFunction(async () => {}); //=> true
-isAsyncFunction(() => {}); //=> false
-
-isFn(() => {}); //=> true
-isFn(async () => {}); //=> true
-isFn(class {}); //=> true
-
-isClass(class {}); //=> true
-isClass(() => {}); //=> false
-isClass(async () => {}); //=> false
 ```
 
 ## ⭐ Support for
@@ -214,7 +164,8 @@ isClass(async () => {}); //=> false
 -   Github [@yonicalsin](https://github.com/yonicalsin)
 -   Twitter [@yonicalsin](https://twitter.com/yonicalsin)
 -   Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--   Medium [@yonicalsin](https://medium.com/yonicalsin)
+-   Medium [@yonicalsin](https://medium.com/@yonicalsin)
+-   Dev [@yonicalsin](https://dev.to/yonicalsin)
 
 ## Contributors
 

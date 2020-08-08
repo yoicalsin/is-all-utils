@@ -1,6 +1,6 @@
 {
     "name": "is-all-utils",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Is utils functions for validate !",
     "main": "index.js",
     "scripts": {
@@ -23,5 +23,6 @@
     "bugs": {
         "url": "https://github.com/yonicalsin/is-all-utils/issues"
     },
-    "homepage": "https://github.com/yonicalsin/is-all-utils#readme"
+    "homepage": "https://github.com/yonicalsin/is-all-utils#readme",
+    "dependencies": {}
 }
