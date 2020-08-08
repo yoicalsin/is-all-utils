@@ -16,6 +16,16 @@ Some functions to validate the type, and they are very light; take a look at the
 <a href="https://twitter.com/yonicalsin" target="_blank">
 <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 
+### Installation
+
+```bash
+npm install --save is-all-utils
+
+# Or
+
+yarn add is-all-utils
+```
+
 ### Usage
 
 For import with `typescript` or `ES6+`
@@ -154,7 +164,8 @@ isPromise(Promise); //=> false
 -   Github [@yonicalsin](https://github.com/yonicalsin)
 -   Twitter [@yonicalsin](https://twitter.com/yonicalsin)
 -   Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--   Medium [@yonicalsin](https://medium.com/yonicalsin)
+-   Medium [@yonicalsin](https://medium.com/@yonicalsin)
+-   Dev [@yonicalsin](https://dev.to/yonicalsin)
 
 ## Contributors
 
