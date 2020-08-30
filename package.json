@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/yonicalsin/is-all-utils.git"
+        "url": "git+https://github.com/yonycalsin/is-all-utils.git"
     },
     "keywords": [
         "is",
@@ -18,11 +18,11 @@
     "devDependencies": {
         "@types/node": "^13.9.0"
     },
-    "author": "Yoni Calsin <helloyonicb@gmail.com>",
+    "author": "Yony Calsin",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/yonicalsin/is-all-utils/issues"
+        "url": "https://github.com/yonycalsin/is-all-utils/issues"
     },
-    "homepage": "https://github.com/yonicalsin/is-all-utils#readme",
+    "homepage": "https://github.com/yonycalsin/is-all-utils#readme",
     "dependencies": {}
 }

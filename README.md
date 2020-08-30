@@ -2,19 +2,19 @@
 
 Some functions to validate the type, and they are very light; take a look at the documentation!
 
-<a href="https://github.com/yonicalsin/is-all-utils"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
+<a href="https://github.com/yonycalsin/is-all-utils"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/is-all-utils" target="_blank">
 <img src="https://img.shields.io/npm/v/is-all-utils" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/is-all-utils" target="_blank">
 <img src="https://img.shields.io/npm/l/is-all-utils" alt="Package License" /></a>
 <a href="https://www.npmjs.com/is-all-utils" target="_blank">
 <img src="https://img.shields.io/npm/dm/is-all-utils" alt="NPM Downloads" /></a>
-<a href="https://github.com/yonicalsin/is-all-utils" target="_blank">
+<a href="https://github.com/yonycalsin/is-all-utils" target="_blank">
 <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-<a href="https://github.com/yonicalsin/is-all-utils"><img src="https://img.shields.io/badge/Github%20Page-is.all.utils-yellow?style=flat-square&logo=github" /></a>
-<a href="https://github.com/yonicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-<a href="https://twitter.com/yonicalsin" target="_blank">
-<img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
+<a href="https://github.com/yonycalsin/is-all-utils"><img src="https://img.shields.io/badge/Github%20Page-is.all.utils-yellow?style=flat-square&logo=github" /></a>
+<a href="https://github.com/yonycalsin"><img src="https://img.shields.io/badge/Author-Yony%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+<a href="https://twitter.com/yonycalsin" target="_blank">
+<img src="https://img.shields.io/twitter/follow/yonycalsin.svg?style=social&label=Follow"></a>
 
 ### Installation
 
@@ -93,7 +93,7 @@ isBool(false); //=> true
 // Map
 isMap(new Map()); //=> true
 isMap(Map); //=> false
-isMap(new Map(Object.entries({ twitter: '@yonicalsin' }))); //=> true
+isMap(new Map(Object.entries({ twitter: '@yonycalsin' }))); //=> true
 
 // WeakMap
 isWeakMap(new WeakMap()); //=> true
@@ -157,15 +157,15 @@ isPromise(Promise); //=> false
 
 ## ⭐ Support for
 
-`is-all-utils` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
+`is-all-utils` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](https://twitter.com/yonycalsin).
 
 ## 🎩 Stay in touch
 
--   Github [@yonicalsin](https://github.com/yonicalsin)
--   Twitter [@yonicalsin](https://twitter.com/yonicalsin)
--   Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--   Medium [@yonicalsin](https://medium.com/@yonicalsin)
--   Dev [@yonicalsin](https://dev.to/yonicalsin)
+-   Github [@yonycalsin](https://github.com/yonycalsin)
+-   Twitter [@yonycalsin](https://twitter.com/yonycalsin)
+-   Instagram [@yony_calsin](https://instagram.com/yony_calsin)
+-   Medium [@yonycalsin](https://medium.com/@yonycalsin)
+-   Dev [@yonycalsin](https://dev.to/yonycalsin)
 
 ## Contributors
 
